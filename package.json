@@ -22,11 +22,6 @@
     "test": "jest",
     "eject": "react-scripts eject"
   },
-  "jest": {
-    "setupFilesAfterEnv": [
-      "<rootDir>/src/tests/component-grid-test.tsx"
-    ]
-  },
   "eslintConfig": {
     "extends": [
       "react-app",
