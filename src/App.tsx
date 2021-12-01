@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import {ProductsCard} from './components/gridComponent'
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
     <main>
      <div className="main-wrapper">
        <div className="product-wrapper">
-
+      <ProductsCard/>
        </div>
        </div>  
     </main>
