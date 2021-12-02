@@ -1,12 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
 import { ProductComponent } from './ProductComponent';
+import { icecreams } from '../database/database';
 
 export const GridComponent = () => {
   const Products = [];
   for (let i = 0; i < 9; i++) {
     Products.push(
-      <ProductComponent name={i.toString()} price={i} inStock={true} key={i} />
+      <ProductComponent
+        name={icecreams[i].name}
+        price={icecreams[i].price}
+        inStock={icecreams[i].inStock}
+        img={icecreams[i].img}
+        key={i}
+      />
     );
   }
 
