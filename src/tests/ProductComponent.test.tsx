@@ -2,7 +2,6 @@ import React from 'react';
 import Enzyme, { shallow } from 'enzyme';
 import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 import { ProductComponent } from '../components/ProductComponent';
-import { icecreams } from '../database/database';
 
 Enzyme.configure({ adapter: new Adapter() });
 
