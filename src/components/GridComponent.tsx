@@ -1,10 +1,15 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from "styled-components"
+
 
 export const GridComponent = () => {
-  return <GridWrapper>Test</GridWrapper>;
+  return <Container>Test</Container>;
 };
 
-export const GridWrapper = styled.div`
-  color: red;
-`;
+export const Container = styled.div`
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    color: white;
+    background-color: #131A22;
+`
