@@ -1,23 +1,23 @@
 import React from 'react';
 import './App.css';
+import { GridComponent } from './components/GridComponent';
 
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
       <header>
-        <div className="nav-bar">
-          <span className="cart">
-          </span>
+        <div className='nav-bar'>
+          <span className='cart'></span>
         </div>
       </header>
       <main>
-        <div className="main-wrapper">
-          <div className="product-wrapper">
+        <div className='main-wrapper'>
+          <div className='product-wrapper'>
+            <GridComponent />
           </div>
         </div>
       </main>
-      <footer>
-      </footer>
+      <footer></footer>
     </div>
   );
 }
