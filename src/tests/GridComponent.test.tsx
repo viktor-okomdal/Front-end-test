@@ -12,6 +12,10 @@ describe('Test for text: <ProductComponent/>', () => {
   });
   it('should check that GridComponent/> has a length of 9', () => {
     const wrapper = shallow(<GridComponent />);
-    expect(wrapper.children().length).toBe(9);
+    expect(wrapper.find('ProductComponent').length).toBe(9);
+  });
+  it('should have a filter input', () => {
+    const wrapper = shallow(<GridComponent />);
+    expect(wrapper.find('input').exists()).toBe(true);
   });
 });

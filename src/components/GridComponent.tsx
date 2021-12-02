@@ -10,7 +10,12 @@ export const GridComponent = () => {
     );
   }
 
-  return <GridWrapper>{Products}</GridWrapper>;
+  return (
+    <div>
+      <GridWrapper>{Products}</GridWrapper>
+      <input type='text' />
+    </div>
+  );
 };
 
 const GridWrapper = styled.div`
