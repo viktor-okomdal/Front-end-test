@@ -10,4 +10,8 @@ describe('Test for text: <ProductComponent/>', () => {
     const wrapper = shallow(<GridComponent />);
     expect(wrapper.exists()).toBe(true);
   });
+  it('should check that GridComponent/> has a length of 9', () => {
+    const wrapper = shallow(<GridComponent />);
+    expect(wrapper.children().length).toBe(9);
+  });
 });
