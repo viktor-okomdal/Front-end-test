@@ -5,9 +5,7 @@ export const NavbarComponent = () => {
   return (
     <NavbarWrapper>
       <Navbar>
-        <NavbarItem>Item 1</NavbarItem>
-        <NavbarItem>Item 2</NavbarItem>
-        <NavbarItem>Item 3</NavbarItem>
+        <NavbarItem>🍦</NavbarItem>
       </Navbar>
     </NavbarWrapper>
   );
@@ -21,10 +19,17 @@ const NavbarWrapper = styled.div`
 
 const Navbar = styled.nav`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 `;
 
-const NavbarItem = styled.button`
-  border: solid 1px black;
+const NavbarItem = styled.a`
+  font-size: 2em;
+  margin: 20px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    transform: scale(1.2);
+    transform: rotate(360deg);
+  }
 `;
