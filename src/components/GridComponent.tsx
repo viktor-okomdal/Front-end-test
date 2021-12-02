@@ -11,10 +11,10 @@ export const GridComponent = () => {
   }
 
   return (
-    <div>
+    <MainWrapper>
+      <Filter type='text' placeholder='Search for a product' />
       <GridWrapper>{Products}</GridWrapper>
-      <input type='text' />
-    </div>
+    </MainWrapper>
   );
 };
 
@@ -23,4 +23,20 @@ const GridWrapper = styled.div`
   grid-template-columns: repeat(3, 200px);
   grid-template-rows: repeat(3, 200px);
   border: solid 1px black;
+`;
+
+const MainWrapper = styled.div`
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+const Filter = styled.input`
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding-left: 10px;
+  width: 250px;
+  height: 30px;
 `;
