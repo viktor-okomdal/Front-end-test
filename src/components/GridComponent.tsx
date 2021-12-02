@@ -27,8 +27,8 @@ export const GridComponent = () => {
 
 const GridWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 200px);
-  grid-template-rows: repeat(3, 200px);
+  grid-template-columns: repeat(3, 400px);
+  grid-template-rows: repeat(3, 400px);
   border: solid 1px black;
 `;
 
