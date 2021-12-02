@@ -6,7 +6,7 @@ export const ProductComponent = ({ name, price, inStock }: IceCream) => {
     <div className='product'>
       <h1>{name}</h1>
       <p>{price}</p>
-      <p>{inStock}</p>
+      <p>{`Is in stock: ${inStock ? 'Yes' : 'No'}`}</p>
     </div>
   );
 };
