@@ -33,7 +33,7 @@ const MainWrapper = styled.div`
   align-items: center;
 `;
 
-const Filter = styled.input`
+export const Filter = styled.input`
   margin-bottom: 20px;
   border-radius: 5px;
   padding-left: 10px;
